@@ -13,6 +13,9 @@ void main(void)
     Key_init();
     Buzz_init();
 
+	WriteChar(1,0,14,"Happy Birthday");
+	WriteChar(2,2,9,"to HuaHua");
+
     while(1)
     {
         key=get_key();
@@ -51,9 +54,6 @@ void main(void)
                     while(1)
                     {
                         Music_HappyBirthday();
-						WriteChar(1,0,14,"Happy Birthday");
-						WriteChar(2,2,9,"to HuaHua");
-
                         delay_nms(2000);
                     }
                     break;
